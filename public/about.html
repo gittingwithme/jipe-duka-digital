@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Kifaru Coffee's story, our commitment to quality, and our partnership with Kenyan farmers.">
+    <meta name="keywords" content="Kifaru Coffee story, Kenyan coffee farm, sustainable coffee, about us">
+    <title>About Us | Kifaru Coffee</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Kifaru Coffee</span>
+            </a>
+            
+            <nav class="nav-desktop" id="nav-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <select id="currency-select" class="currency-select">
+                    <option value="KES">KES</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+                
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+                    <i data-lucide="sun" class="icon sun-icon"></i>
+                    <i data-lucide="moon" class="icon moon-icon"></i>
+                </button>
+                
+                <button id="cart-btn" class="icon-btn cart-btn" aria-label="Open cart">
+                    <i data-lucide="shopping-bag" class="icon"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </button>
+                
+                <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="icon"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="nav-mobile">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart" class="icon-btn" aria-label="Close cart">
+                <i data-lucide="x" class="icon"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">KES 0</span>
+            </div>
+            <button class="btn btn-primary btn-full">Checkout</button>
+            <button id="clear-cart" class="btn btn-outline btn-full">Clear Cart</button>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Story</h1>
+                <p class="page-subtitle">A journey from the Kenyan highlands to your cup</p>
+            </div>
+        </section>
+        
+        <!-- Story Section -->
+        <section class="section about-story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-image">
+                        <img src="images/about-coffee-farm.jpg" alt="Kenyan coffee farm in the highlands">
+                    </div>
+                    <div class="story-content">
+                        <h2>From Humble Beginnings</h2>
+                        <p>Founded in 2009 in the heart of Nairobi, Kifaru Coffee began as a small family venture with a simple mission: to share the exceptional taste of Kenyan coffee with the world.</p>
+                        <p>Our name "Kifaru" — meaning rhinoceros in Swahili — represents our commitment to strength, resilience, and protecting our heritage. Just as the rhino is an iconic symbol of Kenya's wildlife, we strive to be an iconic symbol of Kenyan coffee excellence.</p>
+                        <p>Today, we work directly with over 200 smallholder farmers across the Central Highlands, ensuring fair wages, sustainable practices, and the highest quality beans from farm to cup.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Timeline Section -->
+        <section class="section timeline-section">
+            <div class="container">
+                <h2 class="section-title centered">Our Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2009</div>
+                        <div class="timeline-content">
+                            <h3>The Beginning</h3>
+                            <p>Started with a single coffee cart in Nairobi's Central Business District</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2012</div>
+                        <div class="timeline-content">
+                            <h3>First Café</h3>
+                            <p>Opened our flagship café on Kimathi Street</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2015</div>
+                        <div class="timeline-content">
+                            <h3>Direct Trade</h3>
+                            <p>Established direct partnerships with 50 highland farmers</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2018</div>
+                        <div class="timeline-content">
+                            <h3>Organic Certified</h3>
+                            <p>Achieved organic and fair trade certification</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2021</div>
+                        <div class="timeline-content">
+                            <h3>Going Global</h3>
+                            <p>Launched international shipping to 30+ countries</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2024</div>
+                        <div class="timeline-content">
+                            <h3>Sustainability First</h3>
+                            <p>Committed to carbon-neutral operations by 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Values Section -->
+        <section class="section values-section">
+            <div class="container">
+                <h2 class="section-title centered">Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="award" class="icon"></i>
+                        </div>
+                        <h3>Quality First</h3>
+                        <p>We never compromise on quality. Every bean is hand-selected, carefully roasted, and freshly delivered.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="users" class="icon"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>We invest in our farming communities through education, healthcare, and fair compensation.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="globe" class="icon"></i>
+                        </div>
+                        <h3>Sustainability</h3>
+                        <p>From eco-friendly packaging to carbon offset programs, we're committed to protecting our planet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Experience Kifaru?</h2>
+                    <p>Join thousands of coffee lovers who start their day with our premium Kenyan blends.</p>
+                    <a href="products.html" class="btn btn-primary btn-lg">Shop Our Collection</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">☕</span>
+                        <span class="logo-text">Kifaru Coffee</span>
+                    </a>
+                    <p>Premium Kenyan coffee and tea, sourced directly from the highlands of Mount Kenya.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i data-lucide="facebook" class="icon"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram" class="icon"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter" class="icon"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i data-lucide="map-pin" class="icon"></i>
+                            <span>123 Kimathi Street, Nairobi, Kenya</span>
+                        </li>
+                        <li>
+                            <i data-lucide="phone" class="icon"></i>
+                            <span>+254 700 123 456</span>
+                        </li>
+                        <li>
+                            <i data-lucide="mail" class="icon"></i>
+                            <span>hello@kifarucoffee.co.ke</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 7am - 8pm</li>
+                        <li>Saturday: 8am - 6pm</li>
+                        <li>Sunday: 9am - 4pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kifaru Coffee. All rights reserved.</p>
+                <p>Made with ❤️ in Kenya</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span id="toast-message"></span>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

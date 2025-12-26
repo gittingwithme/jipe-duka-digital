@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our premium selection of Kenyan coffee and tea products. Single-origin, organic, and fair trade.">
+    <meta name="keywords" content="buy Kenyan coffee, premium tea, organic coffee, fair trade coffee">
+    <title>Products | Kifaru Coffee</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Kifaru Coffee</span>
+            </a>
+            
+            <nav class="nav-desktop" id="nav-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <select id="currency-select" class="currency-select">
+                    <option value="KES">KES</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+                
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+                    <i data-lucide="sun" class="icon sun-icon"></i>
+                    <i data-lucide="moon" class="icon moon-icon"></i>
+                </button>
+                
+                <button id="cart-btn" class="icon-btn cart-btn" aria-label="Open cart">
+                    <i data-lucide="shopping-bag" class="icon"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </button>
+                
+                <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="icon"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="nav-mobile">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link active">Products</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart" class="icon-btn" aria-label="Close cart">
+                <i data-lucide="x" class="icon"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">KES 0</span>
+            </div>
+            <button class="btn btn-primary btn-full">Checkout</button>
+            <button id="clear-cart" class="btn btn-outline btn-full">Clear Cart</button>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Products</h1>
+                <p class="page-subtitle">Explore our premium collection of Kenyan coffee and tea</p>
+            </div>
+        </section>
+        
+        <section class="section products-section">
+            <div class="container">
+                <div class="products-filters">
+                    <div class="search-box">
+                        <i data-lucide="search" class="icon"></i>
+                        <input type="text" id="search-input" placeholder="Search products..." class="search-input">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="coffee">Coffee</button>
+                        <button class="filter-btn" data-filter="tea">Tea</button>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="all-products">
+                    <!-- Products will be inserted by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">☕</span>
+                        <span class="logo-text">Kifaru Coffee</span>
+                    </a>
+                    <p>Premium Kenyan coffee and tea, sourced directly from the highlands of Mount Kenya.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i data-lucide="facebook" class="icon"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram" class="icon"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter" class="icon"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i data-lucide="map-pin" class="icon"></i>
+                            <span>123 Kimathi Street, Nairobi, Kenya</span>
+                        </li>
+                        <li>
+                            <i data-lucide="phone" class="icon"></i>
+                            <span>+254 700 123 456</span>
+                        </li>
+                        <li>
+                            <i data-lucide="mail" class="icon"></i>
+                            <span>hello@kifarucoffee.co.ke</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 7am - 8pm</li>
+                        <li>Saturday: 8am - 6pm</li>
+                        <li>Sunday: 9am - 4pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kifaru Coffee. All rights reserved.</p>
+                <p>Made with ❤️ in Kenya</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span id="toast-message"></span>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
