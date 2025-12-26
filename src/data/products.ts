@@ -1,0 +1,68 @@
+import { Product } from '@/components/products/ProductCard';
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: 'Kenya AA Single Origin',
+    description: 'Premium arabica beans from the slopes of Mount Kenya. Bold, wine-like acidity with berry undertones.',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&h=600&fit=crop',
+    category: 'Coffee',
+  },
+  {
+    id: 2,
+    name: 'Nyeri Highland Roast',
+    description: 'Medium roast from Nyeri County. Notes of citrus, blackcurrant, and a smooth chocolate finish.',
+    price: 1800,
+    image: 'https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=600&h=600&fit=crop',
+    category: 'Coffee',
+  },
+  {
+    id: 3,
+    name: 'Kenyan Purple Tea',
+    description: 'Unique purple tea variety rich in antioxidants. Light, floral notes with natural sweetness.',
+    price: 1200,
+    image: 'https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=600&h=600&fit=crop',
+    category: 'Tea',
+  },
+  {
+    id: 4,
+    name: 'Kericho Gold Tea',
+    description: 'Classic Kenyan black tea from the Kericho highlands. Rich, malty flavor perfect for chai.',
+    price: 800,
+    image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=600&fit=crop',
+    category: 'Tea',
+  },
+  {
+    id: 5,
+    name: 'Espresso Blend',
+    description: 'Dark roast blend crafted for espresso lovers. Bold, smoky with hints of caramel.',
+    price: 1600,
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&h=600&fit=crop',
+    category: 'Coffee',
+  },
+  {
+    id: 6,
+    name: 'Masai Mara Sunrise',
+    description: 'Light roast inspired by the golden savanna. Bright, fruity with jasmine notes.',
+    price: 1700,
+    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop',
+    category: 'Coffee',
+  },
+  {
+    id: 7,
+    name: 'Herbal Hibiscus Blend',
+    description: 'Caffeine-free blend featuring Kenyan hibiscus flowers. Tangy, refreshing, and vibrant.',
+    price: 950,
+    image: 'https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=600&h=600&fit=crop',
+    category: 'Tea',
+  },
+  {
+    id: 8,
+    name: 'Safari Cold Brew',
+    description: 'Pre-ground coffee optimized for cold brewing. Smooth, low-acid, chocolatey perfection.',
+    price: 1400,
+    image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=600&fit=crop',
+    category: 'Coffee',
+  },
+];
